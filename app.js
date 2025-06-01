@@ -8,14 +8,8 @@ dotenv.config();
 const app = express();
 
 // Middleware - must come before routes
-app.use(cors({
-  origin: [
-    'https://frontend-medscena.vercel.app',
-    'https://frontend-medscena-tysg-8maubhtdz.vercel.app',
-    'https://frontend-medscena-r19l.vercel.app'
-  ],
-  credentials: true
-}));
+app.use(cors());
+
 
 app.use(express.json());
 
