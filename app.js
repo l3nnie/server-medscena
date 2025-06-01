@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware - must come before routes
 app.use(cors({
-    origin: config.FRONTEND_URL || 'http://localhost:5173',
+    origin: config.FRONTEND_URL || 'https://frontend-medscena-tysg-8maubhtdz.vercel.app',
     credentials: true
 }));
 app.use(express.json());
