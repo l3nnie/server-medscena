@@ -9,9 +9,14 @@ const app = express();
 
 // Middleware - must come before routes
 app.use(cors({
-    origin: config.FRONTEND_URL || 'https://frontend-medscena-tysg-8maubhtdz.vercel.app',
-    credentials: true
+  origin: [
+    'https://frontend-medscena.vercel.app',
+    'https://frontend-medscena-tysg-8maubhtdz.vercel.app',
+    'https://frontend-medscena-r19l.vercel.app'
+  ],
+  credentials: true
 }));
+
 app.use(express.json());
 
 // API Routes
