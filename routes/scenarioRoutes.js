@@ -15,6 +15,11 @@ router.post('/generate',
   generateScenarios
 );
 
+router.get('/', (req, res) => {
+  res.json({ message: 'Scenario route root OK' });
+});
+
+
 // Example of proper parameterized routes:
 // router.get('/scenarios/:id', getScenarioById); // Correct parameter syntax
 // router.get('/search/:query', searchScenarios); // Correct parameter syntax
