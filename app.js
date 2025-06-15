@@ -30,7 +30,8 @@ console.log('🚀 Starting server...');
 // Define all allowed origins for your frontend applications
 const allowedOrigins = [
     'https://frontend-medscena-tysg-8maubhtdz.vercel.app', // Your Vercel frontend URL
-    'https://frontend-medscena-8tl7.vercel.app', // Another potential Vercel frontend URL
+    'https://frontend-medscena-8tl7.vercel.app',// Another potential Vercel frontend URL
+    'https://front-notes-xi.vercel.app/',
     'http://localhost:5173', // Local development URL for Vite
     'http://localhost:3000'  // Common local development URL for Create React App
 ];
